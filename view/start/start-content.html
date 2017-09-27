@@ -1,0 +1,106 @@
+<div starttopswiper></div>
+<div class="start-list">
+	<ul>
+		<li ui-sref="start.type">
+			<div>
+				<div><img src="img/xianhua_icon.png" alt=""></div>
+				<p>鲜花</p>
+			</div>
+		</li>
+		<li ui-sref="start.type">
+			<div>
+				<div><img src="img/xianhua_icon.png" alt=""></div>
+				<p>永生花</p>
+			</div>
+		</li>
+		<li ui-sref="start.type">
+			<div>
+				<div><img src="img/xianhua_icon.png" alt=""></div>
+				<p>蛋糕</p>
+			</div>
+		</li>
+		<li ui-sref="start.type">
+			<div>
+				<div><img src="img/xianhua_icon.png" alt=""></div>
+				<p>礼品</p>
+			</div>
+		</li>
+		<li ui-sref="start.type">
+			<div>
+				<div><img src="img/xianhua_icon.png" alt=""></div>
+				<p>巧克力</p>
+			</div>
+		</li>
+	</ul>
+</div>
+<div class="xianhua">
+	<div class="start-list-title"><span>鲜花精选</span></div>
+	<ul class="xianhua-list clearfix">
+		<li  ng-repeat="item in flowerdata" ui-sref="goods({'form':'flower','name':item.name,'index':0})">
+			<div>
+				<img ng-src="img/{{item.imgs}}" alt="">
+			</div>
+			<p>鲜花/{{item.name}}</p>
+			<p>{{item.title}}</p>
+			<p>
+				<span class="newprice">
+					<i class="glyphicon glyphicon-yen"></i>
+					<span>{{item.newprice}}</span>
+				</span>
+				<span class="oldprice">
+					<i class="glyphicon glyphicon-yen"></i>
+					<span>{{item.oldprice}}</span>
+				</span>
+			</p>
+		</li>
+	</ul>
+	<div class="more-btn" ui-sref="table({'form':'flower'})">查看全部<i class="glyphicon glyphicon-menu-right"></i></div>
+</div>
+<div class="yongshenghua">
+	<div class="start-list-title"><span>蛋糕精选</span></div>
+	<ul class="xianhua-list">
+		<li ui-sref="goods" ng-repeat="item in cakedata">
+			<div>
+				<img ng-src="img/{{item.imgs}}" alt="">
+			</div>
+			<p>蛋糕/{{item.name}}</p>
+			<p>{{item.title}}</p>
+			<p>
+				<span class="newprice">
+					<i class="glyphicon glyphicon-yen"></i>
+					<span>{{item.newprice}}</span>
+				</span>
+				<span class="oldprice">
+					<i class="glyphicon glyphicon-yen"></i>
+					<span>{{item.oldprice}}</span>
+				</span>
+			</p>
+		</li>
+	</ul>
+	<div class="more-btn">查看全部<i class="glyphicon glyphicon-menu-right"></i></div>
+</div>
+<div startfooterswiper></div>
+<div class="footer">
+	<div class="footer-btn">
+		<div>
+			<span><i class="glyphicon glyphicon-phone"></i></span>
+			<p>客户端</p>
+		</div>
+		<div>
+			<span><i class="glyphicon glyphicon-earphone"></i></span>
+			<p>客服</p>
+		</div>
+	</div>
+	<div class="footer-title">
+		<p>Copyright © 2005~2017 花礼网(中国鲜花礼品网) 版权所有</p>
+		<p>中国鲜花网领先品牌，鲜花速递专家！</p>
+	</div>
+</div>
+<div class="start-btn">
+	<div id="return-top">
+		<i class="glyphicon glyphicon-menu-up"></i>
+	</div>
+	<div id="phone">
+		<i class="glyphicon glyphicon-earphone"></i>
+	</div>
+</div>

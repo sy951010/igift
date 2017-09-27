@@ -1,0 +1,50 @@
+<div class="table-header">	
+	<div id="top">
+		<p>
+			<span class="fl">
+				<i class="glyphicon glyphicon-menu-left"></i>
+			</span>
+			<span>鲜花列表</span>
+			<span class="fr" id="open-menu">
+				<i class="glyphicon glyphicon-list"></i>
+			</span>
+			
+		</p>
+	</div>
+	<div class="menu">
+		<ul>
+			<li ui-sref="start({'index':0})">
+				<div>
+					<i class="glyphicon glyphicon-home"></i>
+					<p>首页</p>
+				</div>
+			</li>
+			<li ui-sref="start({'index':2})">
+				<div>
+					<i class="glyphicon glyphicon-tasks"></i>
+					<p>分类</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<i class="glyphicon glyphicon-shopping-cart"></i>
+					<p>购物车</p>
+				</div>
+			</li>
+			<li>
+				<div>
+					<i class="glyphicon glyphicon-user"></i>
+					<p>我的</p>
+				</div>
+			</li>
+		</ul>
+	</div>
+	<div class="top-list">
+		<ul>
+			<li ng-click="changeType('')" ng-class="{'top-act':orderType==''}">最新</li>
+			<li ng-click="changeType('newprice')" ng-class="{'top-act':orderType=='newprice'}">价格</li>
+			<li>销量</li>
+			<li>城市</li>
+		</ul>
+	</div>
+</div>

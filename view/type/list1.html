@@ -1,0 +1,20 @@
+<div class="type-content">
+	<div class="type-banner">
+		<img ng-src="{{type.img}}" alt="" />
+		<div>
+			<p>{{type.msg}}</p>
+		</div>
+	</div>
+	<div id="type-content">
+		<ul>
+			<li>
+				<i class="glyphicon glyphicon-th-large"></i>
+				<p>全部</p>
+			</li>
+			<li ng-repeat="item in type.contener" ui-sref="goods({'form':flag,'name':item.name,'index':1})">
+				<img ng-src="img/{{item.imgs}}" alt="" />
+				<p>{{item.name}}</p>
+			</li>
+		</ul>
+	</div>
+</div>

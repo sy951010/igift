@@ -1,0 +1,19 @@
+<div table-header></div>
+<div class="table-list">
+	<ul>
+		<li ng-repeat="item in data |orderBy:orderType" ui-sref="goods({'form':'flower','name':item.name,'index':3})">
+			<img ng-src="img/{{item.imgs}}"/>
+			<div>
+				<p>
+					<span>{{item.name}}</span>
+				</p>
+				<p>
+					{{item.title}} 
+				</p>
+				<p>
+					{{item.newprice|currency:"￥"}}
+				</p>
+			</div>
+		</li>
+	</ul>
+</div>
